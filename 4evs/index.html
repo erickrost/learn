@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4evs</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <input id="num1" type="number" value="0">
+            <input id="num2" type="number">
+        </div>
+        <div>
+            <input id="num3" type="number">
+            <input id="num4" type="number">
+        </div>
+    </div>
+
+    <script>
+        let num1 = document.getElementById("num1")
+
+        console.log(num1.value)
+
+        // DECLARAÇÃO (LET/CONST/VAR)
+        // NOME DA VARIÁVEL
+        // VALOR DELA (estrutura de dados)
+        // num1     vc ta apontando pra uma variavel
+        // 'num1'   string
+        // "num1"   string
+        // TIPOS PRIMITIVOS
+        // string, number, boolean, null, undefined
+        let variavel1 = "texto"     // string, texto, lista com texto
+        // 'textosimples'
+        // "textoduplas"
+        let variavel2 = 123         // numérico inteiro
+        let variavel3 = 4.5         // numérico decimal
+
+        let variavel4 = true        // booleano
+        let variavel5 = false       // booleano
+
+        let variavel6 = null        // null indica ausência
+        let variavel7 = undefined   // undefined não foi definido
+
+        // tipos não-primitivos
+        // lista ou array
+        // pode comportar N elementos, quantos vc quiser
+        let variavel8 = [
+            0,
+            4.5,
+            true,
+            false,
+            "abc",
+            null,
+            undefined
+        ]
+
+        // objeto
+        // OBJECT DOM
+        // declarar formas
+        // propriedade: valor comum : document.body
+        // metódo: é uma função dentro de um objeto : document.getElementById
+        let pessoa = {
+            nome: "erick",
+            altura: 12,
+            idade: 46,
+            peso: 400,
+        }
+    </script>
+</body>
+</html>
