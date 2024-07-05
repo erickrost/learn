@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +10,30 @@
 <body>
     <div>
         <div>
-            <input id="num1" type="number" value="0">
-            <input id="num2" type="number">
+            <input id="num1" type="number" value="0" onchange="num1">
+            <input id="num2" type="number" value="0">
         </div>
         <div>
-            <input id="num3" type="number">
-            <input id="num4" type="number">
+            <input id="num3" type="number" value="0">
+            <input id="num4" type="number" value="0">
         </div>
     </div>
 
     <script>
         let num1 = document.getElementById("num1")
+        let num2 = document.getElementById("num2")
+        let num3 = document.getElementById("num3")
+        let num4 = document.getElementById("num4")
+
+        num1.addEventListener('input', function () {
+            num1 = num1.value;
+            console.log(num1);
+        });
 
         console.log(num1.value)
+
+
+
 
         // DECLARAÇÃO (LET/CONST/VAR)
         // NOME DA VARIÁVEL
@@ -69,4 +81,5 @@
         }
     </script>
 </body>
+
 </html>
